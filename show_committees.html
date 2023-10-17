@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Committees</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">Home</a> <!-- Home Page Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <!-- You can add more navigation items here if needed -->
+        </div>
+    </nav>
+    <div class="container mt-5">
+        <h2 class="text-center">Committee Details</h2>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Committee Name</th>
+                    <th>Task</th>
+                    <th>Head</th>
+                    <th>College</th>
+                    
+                    <!-- Add more table headers for Due Date, Members, Head, College, etc. -->
+                </tr>
+            </thead>
+            <tbody id="committeeTableBody">
+                <!-- Committee data will be dynamically generated here -->
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Include the Firebase JavaScript SDK -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+
+    <!-- Include the show_committee.js file -->
+    <script src="show_committee.js"></script>
+</body>
+</html>
